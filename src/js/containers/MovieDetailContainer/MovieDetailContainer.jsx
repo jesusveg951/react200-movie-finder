@@ -1,4 +1,5 @@
 import React from 'react';
+
 class MovieDetailContainer extends React.Component {
   constructor(props) {
     super(props);
@@ -7,6 +8,7 @@ class MovieDetailContainer extends React.Component {
     return (
       <div>
         <h1>Movie Detail Container</h1>
+
         <p>Viewing movie {this.props.match.params.id}</p>
       </div>
     )
