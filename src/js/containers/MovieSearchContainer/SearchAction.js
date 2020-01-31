@@ -1,12 +1,12 @@
 const axios = require('axios');
 
-export const updateSearch = title => ({
-  type: 'UPDATE_SEARCH_INPUT',
+export const searchMovieTitle = title => ({
+  type: 'UPDATE_MOVIE_SEARCH',
   payload: title
 });
 
-export const getMovie = title => ({
-  type: 'GET_MOVIE',
+export const findMovie = title => ({
+  type: 'FIND_MOVIE',
   payload: axios.get(`/movies/${title}`)
 });
 
