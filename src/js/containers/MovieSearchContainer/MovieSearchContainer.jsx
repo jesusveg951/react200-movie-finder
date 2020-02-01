@@ -25,7 +25,7 @@ export default class MovieSearchContainer extends React.Component {
     const { value, movies } = this.props;
     return (
       <div className='container'>
-        <h3 className='text-primary l text-center'>Movie Finder App.</h3>
+        <h3 className='text-primary l text-center'>Movie Finder</h3>
         <div style={ { marginBottom: '10px' } } className='input-group'>
           <input type='text' className='form-control' placeholder='Enter A Movie' value={ value } onChange={ this.handleSearch } />
           <span className='input-group-lg'>
