@@ -13,6 +13,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "babel": "^6.3.26",
+    "babel-preset-airbnb": "^4.4.0",
     "babel-preset-stage-3": "^6.24.1",
     "babel-register": "^6.4.3",
     "bluebird": "^3.5.0",
@@ -27,6 +28,7 @@
     "lodash": "^4.17.15",
     "lodash-webpack-plugin": "^0.10.2",
     "map-store-to-props": "0.0.3",
+    "mapping": "^0.2.0",
     "morgan": "^1.9.1",
     "prop-types": "^15.5.10",
     "react": "^16.8.6",

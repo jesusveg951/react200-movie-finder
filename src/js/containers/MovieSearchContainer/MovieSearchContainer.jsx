@@ -27,13 +27,16 @@ export default class MovieSearchContainer extends React.Component {
       <div className='container'>
         <h3 className='text-primary l text-center'>Movie Finder</h3>
         <div style={ { marginBottom: '10px' } } className='input-group'>
-          <input type='text' className='form-control' placeholder='Enter A Movie' value={ value } onChange={ this.handleSearch } />
+          <input type='text' className='form-control' placeholder='Avengers: The Passion of The Christ' value={ value } onChange={ this.handleSearch } />
           <span className='input-group-lg'>
             <button className='btn btn-primary' type='button' onClick={ this.handleSubmit }>Find it!</button>
           </span>
         </div>
         <div className='row text-center'>
-          {movies.map(searchedMovie => (
+          
+          {/* {this.props.movie.map} */}
+        
+           {movies.map(searchedMovie => (
             <div className='col-sm-4' key={ searchedMovie.imdbID } style={ { marginBottom: '25px' } }>
               <div className='card' style={ { height: '100%' } } key={ searchedMovie.imdbID }>
                 <div className='card-body'>
@@ -47,7 +50,7 @@ export default class MovieSearchContainer extends React.Component {
                 </div>
               </div>
             </div>
-        ))}
+        ))} 
         </div>
       </div>
     );
